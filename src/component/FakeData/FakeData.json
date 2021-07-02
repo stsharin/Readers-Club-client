@@ -1,0 +1,37 @@
+[{
+    "name": "JavaScript Everywhere",
+    "writer": "Adam D. Scottark Lutz",
+    "image": "http://dummyimage.com/170x100.png/cc0000/ffffff"
+  }, {
+    "name": "Eloquent JavaScript",
+    "writer": "Marijn Haverbeke",
+    "image": "http://dummyimage.com/246x100.png/ff4444/ffffff"
+  }, {
+    "name": "Learning React",
+    "writer": "Alex Banks & Eve Porcello",
+    "image": "http://dummyimage.com/121x100.png/cc0000/ffffff"
+  }, {
+    "name": "The Road to React",
+    "writer": "Robin Wieruch",
+    "image": "http://dummyimage.com/179x100.png/dddddd/000000"
+  }, {
+    "name": "The C Programming Language",
+    "writer": "Brain W. Kernighan Dennis M. Ritchie",
+    "image": "http://dummyimage.com/193x100.png/cc0000/ffffff"
+  }, {
+    "name": "Effective TypeScript",
+    "writer": "Dan Vanderkam",
+    "image": "http://dummyimage.com/214x100.png/5fa2dd/ffffff"
+  }, {
+    "name": "Python Crash Course",
+    "writer": "Eric Matthes",
+    "image": "http://dummyimage.com/197x100.png/5fa2dd/ffffff"
+  }, {
+    "name": "Software Engineering at Google",
+    "writer": "Titus Winter",
+    "image": "http://dummyimage.com/199x100.png/dddddd/000000"
+  }, {
+    "name": "Learn JavaScript Quickly",
+    "writer": "Dan Vanderkam",
+    "image": "http://dummyimage.com/246x100.png/5fa2dd/ffffff"
+  }]
