@@ -7,12 +7,12 @@ const Home = () => {
         <div>
             <Navbar />
             <div className="container">
-                <div className="d-flex justify-content-center m-5">
-                    <input className="form-control" type="text" placeholder="Search..." />
-                    <button className="btn btn-primary">Search</button>
+                <div className="d-flex justify-content-center m-5 input-group">
+                    <input style={{width: '500px', border: '0px', backgroundColor: '#f0f0ef'}} className="ps-3 rounded"  type="search" placeholder="Search Book" />
+                    <button className="btn" style={{ backgroundColor: '#8C3EF0', color: 'white' }}>Search</button>
                 </div>
             </div>
-            <TotalBooks/>
+            <TotalBooks />
         </div>
     );
 };

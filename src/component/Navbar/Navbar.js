@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <a className="navbar-brand ms-5" href="/home">Book Shop</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ const Navbar = () => {
                                 <a className="nav-link active" href="/home">Deals</a>
                             </li>
                             <li className="nav-item me-5">
-                                <button className="btn btn-primary">Login</button>
+                                <button className="btn" style={{ backgroundColor: '#8C3EF0', color: 'white' }}>Login</button>
                             </li>
                         </ul>
                     </div>

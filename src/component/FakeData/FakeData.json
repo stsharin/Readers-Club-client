@@ -1,37 +1,46 @@
 [{
     "name": "JavaScript Everywhere",
     "writer": "Adam D. Scottark Lutz",
-    "image": "http://dummyimage.com/170x100.png/cc0000/ffffff"
+    "image": "https://i.ibb.co/fQGn0nc/image-25.png",
+    "price": "$234"
   }, {
     "name": "Eloquent JavaScript",
     "writer": "Marijn Haverbeke",
-    "image": "http://dummyimage.com/246x100.png/ff4444/ffffff"
+    "image": "https://i.ibb.co/gFw03Jf/image-19.png",
+    "price": "$134"
   }, {
     "name": "Learning React",
     "writer": "Alex Banks & Eve Porcello",
-    "image": "http://dummyimage.com/121x100.png/cc0000/ffffff"
+    "image": "https://i.ibb.co/WDM9rgD/image-20.png",
+    "price": "$434"
   }, {
     "name": "The Road to React",
     "writer": "Robin Wieruch",
-    "image": "http://dummyimage.com/179x100.png/dddddd/000000"
+    "image": "https://i.ibb.co/XxdTPQS/image-21.png",
+    "price": "$334"
   }, {
     "name": "The C Programming Language",
     "writer": "Brain W. Kernighan Dennis M. Ritchie",
-    "image": "http://dummyimage.com/193x100.png/cc0000/ffffff"
+    "image": "https://i.ibb.co/fH1HwrQ/image-22.png",
+    "price": "$342"
   }, {
     "name": "Effective TypeScript",
     "writer": "Dan Vanderkam",
-    "image": "http://dummyimage.com/214x100.png/5fa2dd/ffffff"
+    "image": "https://i.ibb.co/7R6YvXL/image-23.png",
+    "price": "$132"
   }, {
     "name": "Python Crash Course",
     "writer": "Eric Matthes",
-    "image": "http://dummyimage.com/197x100.png/5fa2dd/ffffff"
+    "image": "https://i.ibb.co/PxQ5Qg3/image-29.png",
+    "price": "$334"
   }, {
     "name": "Software Engineering at Google",
     "writer": "Titus Winter",
-    "image": "http://dummyimage.com/199x100.png/dddddd/000000"
+    "image": "https://i.ibb.co/Vvj17Nn/image-30.png",
+    "price": "$342"
   }, {
     "name": "Learn JavaScript Quickly",
     "writer": "Dan Vanderkam",
-    "image": "http://dummyimage.com/246x100.png/5fa2dd/ffffff"
+    "image": "https://i.ibb.co/gmXBrH1/image-31.png",
+    "price": "$132"
   }]
