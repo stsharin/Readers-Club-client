@@ -7,7 +7,7 @@ const Home = () => {
             <div className="container">
                 <div className="d-flex justify-content-center m-5 input-group">
                     <input style={{width: '500px', border: '0px', backgroundColor: '#f0f0ef'}} className="ps-3 rounded"  type="search" placeholder="Search Book" />
-                    <button className="btn" style={{ backgroundColor: '#8C3EF0', color: 'white' }}>Search</button>
+                    <button className="btn" style={{ backgroundColor: '#6650e4', color: 'white' }}>Search</button>
                 </div>
             </div>
             <TotalBooks />
