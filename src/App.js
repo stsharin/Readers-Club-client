@@ -2,16 +2,19 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Home from "./component/Home/Home";
+// import Login from "./component/Login/Login";
 import NotFound from "./component/NotFound/NotFound";
+import Navbar from "./component/Navbar/Navbar";
+import Login from "./component/Login/Login";
 
 function App() {
   return (
-    <div>
+    
       <Router>
+        <Navbar/>
         <Switch>
           <Route path="/home">
             <Home/>
@@ -19,12 +22,15 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
           <Route path="*">
             <NotFound/>
           </Route>
         </Switch>
       </Router>
-    </div>
+    
   );
 }
 

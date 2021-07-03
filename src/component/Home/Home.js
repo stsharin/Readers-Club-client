@@ -1,11 +1,9 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
 import TotalBooks from '../TotalBooks/TotalBooks';
 
 const Home = () => {
     return (
         <div>
-            <Navbar />
             <div className="container">
                 <div className="d-flex justify-content-center m-5 input-group">
                     <input style={{width: '500px', border: '0px', backgroundColor: '#f0f0ef'}} className="ps-3 rounded"  type="search" placeholder="Search Book" />
