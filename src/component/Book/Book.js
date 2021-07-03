@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Book = (props) => {
+
     const book = props.book;
     const { name, writer, image, price } = book;
+
     return (
         <div className="col-md-4 mb-5 col d-flex justify-content-center">
             <Link style={{ color: 'inherit', textDecoration: 'none' }}>

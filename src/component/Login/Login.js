@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
+import { useHistory, useLocation } from 'react-router-dom';
 
+// firebase initialize
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
 }
@@ -11,13 +13,20 @@ if (!firebase.apps.length) {
 const Login = () => {
     const googleProvider = new firebase.auth.GoogleAuthProvider();
     const [error, setError] = useState("");
-    const [user, setUser] = useState({});
+    const location = useLocation();
+    const history = useHistory();
+
+    // setting path for private routes
+    const { from } = location.state || { from: { pathname: '/' } }
 
     const handleGoogleLogin = () => {
+        // google authentication
         firebase.auth().signInWithPopup(googleProvider)
             .then((result) => {
                 const user = result.user;
-
+                const loggedInUser = { name: user.displayName, email: user.email, image: user.photoURL }
+                localStorage.setItem("user", JSON.stringify(loggedInUser));
+                history.replace(from);
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -26,6 +35,7 @@ const Login = () => {
     }
 
     return (
+        // Login form design
         <div className="container col-md-6">
             <div className="d-flex justify-content-center shadow m-5">
                 <div className="text-center m-5">
@@ -41,10 +51,10 @@ const Login = () => {
                     <div>
                         <h6>Or</h6>
                         <button onClick={handleGoogleLogin} className="btn form-control m-2 border" style={{ color: '#6650e4' }}>Continue with Google</button>
-                        {/* <p>{error}</p> */}
                     </div>
                 </div>
             </div>
+            <p className="text-center text-danger">{error}</p>
         </div>
     );
 };
