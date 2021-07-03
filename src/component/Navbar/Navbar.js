@@ -23,7 +23,7 @@ const Navbar = () => {
                                 <a className="nav-link active" href="/home">Admin</a>
                             </li>
                             <li className="nav-item me-5">
-                                <a className="nav-link active" href="/home">Deals</a>
+                                <a className="nav-link active" href="/home">Checkout</a>
                             </li>
                             <li className="nav-item me-5">
                                 <Link className="nav-link active" to="/login"><button className="btn" style={{ backgroundColor: '#6650e4', color: 'white'}}>Login</button></Link>
