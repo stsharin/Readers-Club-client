@@ -45,12 +45,12 @@ const Login = () => {
                     <div>
                         <input type="email" className="form-control mb-3" placeholder="Email"></input>
                         <input type="password" className="form-control mb-3" placeholder="Password"></input>
-                        <button className="btn form-control mb-2" style={{ backgroundColor: '#6650e4', color: 'white' }}>Login</button>
-                        <p>Don't have an account? <a href="/login" style={{ textDecoration: 'none', color: '#6650e4' }}>Create an account</a></p>
+                        <button className="btn form-control mb-2" style={{ backgroundColor: '#1d5ca0', color: 'white' }}>Login</button>
+                        <p>Don't have an account? <a href="/login" style={{ textDecoration: 'none', color: '#1d5ca0' }}>Create an account</a></p>
                     </div>
                     <div>
                         <h6>Or</h6>
-                        <button onClick={handleGoogleLogin} className="btn form-control m-2 border" style={{ color: '#6650e4' }}>Continue with Google</button>
+                        <button onClick={handleGoogleLogin} className="btn form-control m-2 border" style={{ color: '#1d5ca0' }}>Continue with Google</button>
                     </div>
                 </div>
             </div>

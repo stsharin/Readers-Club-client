@@ -15,8 +15,8 @@ const Book = (props) => {
                     <p>{writer}</p>
                 </div>
                 <div className="mb-5 mt-3">
-                    <h4 style={{ float: 'left', color: '#6650e4' }}>{price}</h4>
-                    <Link to="/checkout"><button className="btn" style={{ float: 'right', backgroundColor: '#6650e4', color: 'white' }}>Buy Now</button></Link>
+                    <h4 style={{ float: 'left', color: '#1d5ca0' }}>{price}</h4>
+                    <Link to="/checkout"><button className="btn" style={{ float: 'right', backgroundColor: '#1d5ca0', color: 'white' }}>Buy Now</button></Link>
                 </div>
             </div>
         </div>

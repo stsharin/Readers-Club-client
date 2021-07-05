@@ -1,46 +1,46 @@
 [{
-    "name": "JavaScript Everywhere",
-    "writer": "Adam D. Scottark Lutz",
-    "image": "https://i.ibb.co/fQGn0nc/image-25.png",
-    "price": "$234"
+    "name": "Network Effect",
+    "writer": "Martha Wells",
+    "image": "https://i.ibb.co/PctrxCx/9781250229847.jpg",
+    "price": "$20"
   }, {
-    "name": "Eloquent JavaScript",
-    "writer": "Marijn Haverbeke",
-    "image": "https://i.ibb.co/gFw03Jf/image-19.png",
-    "price": "$134"
+    "name": "And Then She Vanished",
+    "writer": "Josesph Bridgeman",
+    "image": "https://i.ibb.co/crKmgfQ/And-Then-She-Vanished.jpg",
+    "price": "$30"
   }, {
-    "name": "Learning React",
-    "writer": "Alex Banks & Eve Porcello",
-    "image": "https://i.ibb.co/WDM9rgD/image-20.png",
-    "price": "$434"
+    "name": "Fable Hill",
+    "writer": "Christopher Uremovich",
+    "image": "https://i.ibb.co/PNNpBtQ/attachment-55662743-e1486418568776.jpg",
+    "price": "$19"
   }, {
-    "name": "The Road to React",
-    "writer": "Robin Wieruch",
-    "image": "https://i.ibb.co/XxdTPQS/image-21.png",
-    "price": "$334"
+    "name": "Enceladus",
+    "writer": "Brandon Q. Morris",
+    "image": "https://i.ibb.co/wgs9vYT/attachment-74814572-e1486420174369.jpg",
+    "price": "$30"
   }, {
-    "name": "The C Programming Language",
-    "writer": "Brain W. Kernighan Dennis M. Ritchie",
-    "image": "https://i.ibb.co/fH1HwrQ/image-22.png",
-    "price": "$342"
+    "name": "The Unknown Figures That Time Lost",
+    "writer": "Alice Parker",
+    "image": "https://i.ibb.co/172h5JP/canva-dark-aurora-background-photo-science-fiction-book-cover-j-IZcw-Za-Q8n-M.jpg",
+    "price": "$49"
   }, {
-    "name": "Effective TypeScript",
-    "writer": "Dan Vanderkam",
-    "image": "https://i.ibb.co/7R6YvXL/image-23.png",
-    "price": "$132"
+    "name": "The Cloudy Mystery",
+    "writer": "Joseph Lafountain",
+    "image": "https://i.ibb.co/q5fpHKB/e64361a2cdcd03e8a02a0c950e277601.jpg",
+    "price": "$27"
   }, {
-    "name": "Python Crash Course",
-    "writer": "Eric Matthes",
-    "image": "https://i.ibb.co/PxQ5Qg3/image-29.png",
-    "price": "$334"
+    "name": "A Glowing Figure",
+    "writer": "Sam Twain",
+    "image": "https://i.ibb.co/S3P1K4v/canva-orange-photo-science-fiction-book-cover-KJN7i-O1v-u-Y.jpg",
+    "price": "$50"
   }, {
-    "name": "Software Engineering at Google",
-    "writer": "Titus Winter",
-    "image": "https://i.ibb.co/Vvj17Nn/image-30.png",
-    "price": "$342"
+    "name": "The Metal Bones",
+    "writer": "Kathleen Contine",
+    "image": "https://i.ibb.co/BnsZfNF/Science-Fiction-Sci-Fi-SF-Space-Opera-Book-Cover-Metal-Bones.jpg",
+    "price": "$35"
   }, {
-    "name": "Learn JavaScript Quickly",
-    "writer": "Dan Vanderkam",
-    "image": "https://i.ibb.co/gmXBrH1/image-31.png",
-    "price": "$132"
+    "name": "Shockwave",
+    "writer": "Lindsay Burokey",
+    "image": "https://i.ibb.co/1XY20rV/shockwave-ebook.jpg",
+    "price": "$37"
   }]

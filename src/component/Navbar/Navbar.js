@@ -26,7 +26,7 @@ const Navbar = () => {
                                 <Link className="nav-link active" to="/checkout">Checkout</Link>
                             </li>
                             <li className="nav-item me-5">
-                                <Link className="nav-link active" to="/login"><button className="btn" style={{ backgroundColor: '#6650e4', color: 'white'}}>Login</button></Link>
+                                <Link className="nav-link active" to="/login"><button className="btn" style={{ backgroundColor: '#1d5ca0', color: 'white'}}>Login</button></Link>
                             </li>
                         </ul>
                     </div>

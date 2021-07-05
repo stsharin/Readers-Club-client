@@ -21,7 +21,7 @@ const Checkout = () => {
                     </table>
                 </div> 
             </div>
-            <button className="btn mt-3" style={{float: 'right', backgroundColor: '#6650e4', color: 'white' }}>Checkout</button>
+            <button className="btn mt-3" style={{float: 'right', backgroundColor: '#1d5ca0', color: 'white' }}>Checkout</button>
         </div>
     );
 };
