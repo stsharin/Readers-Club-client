@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Book = (props) => {
 
     const book = props.book;
-    const { _id, name, writer, image, price } = book;
+    const { _id, name, writer, image, price, quantity } = book;
 
     return (
         <div className="col-md-4 mb-5 col d-flex justify-content-center">
