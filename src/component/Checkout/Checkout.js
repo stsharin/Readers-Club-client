@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Checkout = () => {
+
+    const { id } = useParams();
+    const [book, setBook] = useState({});
+
+    useEffect(() => {
+        fetch(`http://localhost:5000/books/${id}`)
+        .then(res => res.json())
+        .then(data => setBook(data))
+    }, [])
+
     return (
         <div className="container col-md-6">
             <div>
@@ -16,12 +27,16 @@ const Checkout = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            
+                            <tr>
+                                <td>{book.name}</td>
+                                <td>1</td>
+                                <td>{book.price}</td>
+                            </tr>
                         </tbody>
                     </table>
-                </div> 
+                </div>
             </div>
-            <button className="btn mt-3" style={{float: 'right', backgroundColor: '#1d5ca0', color: 'white' }}>Checkout</button>
+            <button className="btn mt-3" style={{ float: 'right', backgroundColor: '#1d5ca0', color: 'white' }}>Checkout</button>
         </div>
     );
 };

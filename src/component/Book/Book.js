@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Book = (props) => {
 
     const book = props.book;
-    const { name, writer, image, price } = book;
+    const { _id, name, writer, image, price } = book;
 
     return (
         <div className="col-md-4 mb-5 col d-flex justify-content-center">
@@ -16,7 +16,7 @@ const Book = (props) => {
                 </div>
                 <div className="mb-5 mt-3">
                     <h4 style={{ float: 'left', color: '#1d5ca0' }}>{price}</h4>
-                    <Link to="/checkout"><button className="btn" style={{ float: 'right', backgroundColor: '#1d5ca0', color: 'white' }}>Buy Now</button></Link>
+                    <Link to={`/checkout/${_id}`}><button className="btn" style={{ float: 'right', backgroundColor: '#1d5ca0', color: 'white' }}>Buy Now</button></Link>
                 </div>
             </div>
         </div>
