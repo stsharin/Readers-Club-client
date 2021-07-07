@@ -6,14 +6,31 @@ const Checkout = () => {
     const { id } = useParams();
     const [book, setBook] = useState({});
 
-    const handleCheckout = () => {
-        
+    const user = JSON.parse(localStorage.getItem('user'));
+    const email = user.email;
+
+    const [orderDetails, setOrderDetails] = useState({
+        name: book.name,
+        quantity: book.quantity,
+        price: book.price
+    })
+
+    const handleCheckout = (e) => {
+        e.preventDefault();
+        console.log(orderDetails);
     }
 
     useEffect(() => {
         fetch(`http://localhost:5000/books/${id}`)
         .then(res => res.json())
-        .then(data => setBook(data))
+        .then(data => {
+            setBook(data);
+            const newOrderDetails = {...orderDetails}
+            newOrderDetails.name = data.name
+            newOrderDetails.quantity = data.quantity
+            newOrderDetails.price = data.price
+            setOrderDetails(newOrderDetails);
+        })
     }, [])
 
     return (
