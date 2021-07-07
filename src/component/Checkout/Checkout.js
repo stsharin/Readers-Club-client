@@ -1,23 +1,35 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
 const Checkout = () => {
 
     const { id } = useParams();
     const [book, setBook] = useState({});
+    const history = useHistory();
 
     const user = JSON.parse(localStorage.getItem('user'));
-    const email = user.email;
 
     const [orderDetails, setOrderDetails] = useState({
-        name: book.name,
-        quantity: book.quantity,
-        price: book.price
+        userName: user.name,
+        email: user.email
     })
 
     const handleCheckout = (e) => {
         e.preventDefault();
         console.log(orderDetails);
+        fetch('http://localhost:5000/addOrder', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(orderDetails)
+        })
+        .then(res=> res.json())
+        .then(data => {
+            alert('Your order is placed successfully');
+            history.replace('/');
+        })
+
     }
 
     useEffect(() => {
