@@ -10,6 +10,7 @@ import Navbar from "./component/Navbar/Navbar";
 import Login from "./component/Login/Login";
 import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
 import Checkout from "./component/Checkout/Checkout";
+import MyOrders from "./component/MyOrders/MyOrders";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <PrivateRoute path="/checkout/:id">
           <Checkout />
+        </PrivateRoute>
+        <PrivateRoute path="/myOrder">
+          <MyOrders />
         </PrivateRoute>
         <Route path="*">
           <NotFound />
