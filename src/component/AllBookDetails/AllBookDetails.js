@@ -17,6 +17,7 @@ const AllBookDetails = () => {
             <div className="row flex-nowrap">
                 <Bar />
                 <div className="col py-3">
+                    <h4 className="mb-3 mt-3">Manage Books</h4>
                     <table className="table">
                         <thead className="p-5 m-5" style={{ backgroundColor: '#1d5ca0' }}>
                             <tr className="" style={{ color: 'white' }}>

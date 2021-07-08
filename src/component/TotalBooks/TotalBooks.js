@@ -24,11 +24,15 @@ const TotalBooks = () => {
     }, [])
 
     return (
-        <div className="row">
-            {/* <button onClick={addAllBooks}>Add Books</button> */}
-            {
-                bookData.map(b => <Book book={b}></Book>)
-            }
+        <div className="container">
+            <div className="container">
+                <div className="row">
+                    {/* <button onClick={addAllBooks}>Add Books</button> */}
+                    {
+                        bookData.map(b => <Book book={b}></Book>)
+                    }
+                </div>
+            </div>
         </div>
     );
 };

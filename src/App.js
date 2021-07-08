@@ -37,17 +37,21 @@ function App() {
           <Navbar />
           <Checkout />
         </PrivateRoute>
+        
         <PrivateRoute path="/myOrder">
           <Navbar />
           <MyOrders />
         </PrivateRoute>
+
         <PrivateRoute path="/allBookDetails">
           <AllBookDetails />
         </PrivateRoute>
+
         <Route path="*">
           <Navbar />
           <NotFound />
         </Route>
+
       </Switch>
     </Router>
   );
