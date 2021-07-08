@@ -16,10 +16,10 @@ const MyOrders = () => {
         <div className="container">
             <div className="row">
                 <div className="">
-                    <h3 className="m-5 text-center text-success">My <span className="text-info">Order List</span></h3>
-                    <table className="table">
+                    <h3 className="mb-3 mt-3">My <span style={{color: '#ff7400'}}>Order List</span></h3>
+                    <table className="table" style={{border: '1px solid #ff7400'}}>
                         <thead>
-                            <tr className="" style={{color: '#1d5ca0'}}>
+                            <tr style={{backgroundColor: '#c4c0c5'}}>
                                 <th><h5>Book Name</h5></th>
                                 <th><h5>Author</h5></th>
                                 <th><h5>Quantity</h5></th>
@@ -27,7 +27,7 @@ const MyOrders = () => {
                             
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody style={{ color: '#000099' }}>
                             {
                                 myOrders.map(order => <MySingleOrder order={order}></MySingleOrder>)
                             }

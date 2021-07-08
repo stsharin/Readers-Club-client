@@ -1,8 +1,23 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const BookDetails = (props) => {
+
     const order = props.order;
-    const { userName, email, name, writer, quantity, price } = order;
+    const { _id, userName, email, name, writer, quantity, price } = order;
+    const history = useHistory();
+
+    const handleDelete = () => {
+        fetch(`http://localhost:5000/deleteOrder/${_id}`, {
+            method: 'DELETE'
+        })
+        .then(res => res.json())
+        .then(data => {
+            alert('Order is deleted successfully.')
+            history.replace('/')
+        })
+    }
+
     return (
         <tr>
             <td>{userName}</td>
@@ -11,7 +26,7 @@ const BookDetails = (props) => {
             <td>{writer}</td>
             <td>{quantity}</td>
             <td>{price}</td>
-            <td><button className="btn btn-danger">Delete</button></td>
+            <td><button onClick={handleDelete} className="btn btn-danger">Delete</button></td>
         </tr>
     );
 };
