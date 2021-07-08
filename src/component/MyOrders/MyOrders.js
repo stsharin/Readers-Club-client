@@ -12,11 +12,28 @@ const MyOrders = () => {
     }, [])
 
     return (
+
         <div className="container">
             <div className="row">
-                {
-                    myOrders.map(order => <MySingleOrder order={order}></MySingleOrder>)
-                }
+                <div className="">
+                    <h3 className="m-5 text-center">My order list</h3>
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Book Name</th>
+                                <th>Author</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                myOrders.map(order => <MySingleOrder order={order}></MySingleOrder>)
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );
