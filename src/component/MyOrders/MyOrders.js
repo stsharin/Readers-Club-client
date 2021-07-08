@@ -16,15 +16,17 @@ const MyOrders = () => {
         <div className="container">
             <div className="row">
                 <div className="">
-                    <h3 className="m-5 text-center">My order list</h3>
+                    <h3 className="m-5 text-center text-success">My <span className="text-info">Order List</span></h3>
                     <table className="table">
                         <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Book Name</th>
-                                <th>Author</th>
-                                <th>Price</th>
+                            <tr className="" style={{color: '#1d5ca0'}}>
+                                <th><h5>Name</h5></th>
+                                <th><h5>Email</h5></th>
+                                <th><h5>Book Name</h5></th>
+                                <th><h5>Author</h5></th>
+                                <th><h5>Quantity</h5></th>
+                                <th><h5>Price</h5></th>
+                            
                             </tr>
                         </thead>
                         <tbody>

@@ -41,6 +41,7 @@ const Checkout = () => {
             newOrderDetails.name = data.name
             newOrderDetails.quantity = data.quantity
             newOrderDetails.price = data.price
+            newOrderDetails.writer = data.writer
             setOrderDetails(newOrderDetails);
         })
     }, [])

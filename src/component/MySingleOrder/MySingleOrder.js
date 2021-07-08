@@ -2,7 +2,7 @@ import React from 'react';
 
 const MySingleOrder = (props) => {
     const order = props.order;
-    const { userName, email, name, writer, quantity } = order;
+    const { userName, email, name, writer, quantity, price } = order;
 
     return (
         <tr>
@@ -11,6 +11,7 @@ const MySingleOrder = (props) => {
             <td>{name}</td>
             <td>{writer}</td>
             <td>{quantity}</td>
+            <td>{price}</td>
         </tr>
     );
 };
