@@ -11,6 +11,7 @@ const BookDetails = (props) => {
             <td>{writer}</td>
             <td>{quantity}</td>
             <td>{price}</td>
+            <td><button className="btn btn-danger">Delete</button></td>
         </tr>
     );
 };

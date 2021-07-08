@@ -20,8 +20,6 @@ const MyOrders = () => {
                     <table className="table">
                         <thead>
                             <tr className="" style={{color: '#1d5ca0'}}>
-                                <th><h5>Name</h5></th>
-                                <th><h5>Email</h5></th>
                                 <th><h5>Book Name</h5></th>
                                 <th><h5>Author</h5></th>
                                 <th><h5>Quantity</h5></th>
