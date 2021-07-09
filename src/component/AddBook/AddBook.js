@@ -16,7 +16,7 @@ const AddBook = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch('http://localhost:5000/addBook', {
+        fetch('https://young-dusk-28666.herokuapp.com/addBook', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(book)
@@ -37,7 +37,7 @@ const AddBook = () => {
                     <div className="container">
                         <div className="d-flex justify-content-center shadow m-5" style={{width: '90%'}}>
                             <div className="text-center mb-5" style={{ width: '50%' }}>
-                                <h3 className="mt-5 mb-5" style={{ color: '#1d5ca0' }}>Add a new Book</h3>
+                                <h3 className="mt-5 mb-5 text-secondary">Add a new Book</h3>
 
                                 <form onSubmit={handleSubmit} className="form-inline" >
 

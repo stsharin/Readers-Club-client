@@ -7,7 +7,7 @@ const AllBookDetails = () => {
     const [order, setOrder] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://young-dusk-28666.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
@@ -18,7 +18,7 @@ const AllBookDetails = () => {
                 <Bar />
                 <div className="col py-3">
                     <div className="container" >
-                        <h4 className="mt-3 mb-3 ms-3">Manage Books</h4>
+                        <h3 className="mt-3 mb-5 ms-3 text-secondary text-center">Manage Books</h3>
                             <table className="table">
                                 <thead className="p-5 m-5" style={{ backgroundColor: '#336ca9' }}>
                                     <tr className="" style={{ color: 'white' }}>

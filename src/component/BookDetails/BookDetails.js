@@ -8,7 +8,7 @@ const BookDetails = (props) => {
     const history = useHistory();
 
     const handleDelete = () => {
-        fetch(`http://localhost:5000/deleteOrder/${_id}`, {
+        fetch(`https://young-dusk-28666.herokuapp.com/deleteOrder/${_id}`, {
             method: 'DELETE'
         })
         .then(res => res.json())

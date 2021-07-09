@@ -5,7 +5,7 @@ import Book from '../Book/Book'
 const TotalBooks = () => {
     // adding fakeData to db
     // const addAllBooks = () => {
-    //     fetch('http://localhost:5000/addBooks', {
+    //     fetch('https://young-dusk-28666.herokuapp.com/addBooks', {
     //         method: 'POST',
     //         headers: { 'Content-Type': 'application/json' },
     //         body: JSON.stringify(bookData)
@@ -18,7 +18,7 @@ const TotalBooks = () => {
 
     // fetching the all book data from server
     useEffect(() => {
-        fetch('http://localhost:5000/books')
+        fetch('https://young-dusk-28666.herokuapp.com/books')
             .then(res => res.json())
             .then(data => setBookData(data))
     }, [])

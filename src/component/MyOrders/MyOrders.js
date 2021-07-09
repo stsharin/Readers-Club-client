@@ -6,7 +6,7 @@ const MyOrders = () => {
     const [myOrders, setMyOrders] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/order/${user.email}`)
+        fetch(`https://young-dusk-28666.herokuapp.com/order/${user.email}`)
             .then(res => res.json())
             .then(data => setMyOrders(data))
     }, [])
@@ -17,10 +17,10 @@ const MyOrders = () => {
             
                 <div className="d-flex justify-content-center shadow m-5 p-2">
                     <div className=" mt-5 mb-5" style={{width: '90%'}}>
-                        <h3 className="mb-3 mt-2" style={{ color: '#ff7400' }}>My Order List</h3>
+                        <h3 className="mb-3 mt-2 text-secondary">My Order List</h3>
                         <table className="table table-borderless" >
                             <thead>
-                                <tr style={{ backgroundColor: '#ff9d4c' }}>
+                                <tr style={{ backgroundColor: '#80c58f', color: 'white'}}>
                                     <th><h5>Book Name</h5></th>
                                     <th><h5>Author</h5></th>
                                     <th><h5>Quantity</h5></th>
@@ -28,7 +28,7 @@ const MyOrders = () => {
 
                                 </tr>
                             </thead>
-                            <tbody style={{ color: '#000099', backgroundColor: '#ffe3cc' }}>
+                            <tbody style={{ color: '#000099', backgroundColor: '#e5f3e8' }}>
                                 {
                                     myOrders.map(order => <MySingleOrder order={order}></MySingleOrder>)
                                 }
