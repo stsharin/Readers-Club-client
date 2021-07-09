@@ -13,12 +13,12 @@ const MyOrders = () => {
 
     return (
 
-        <div className="container col-md-8">
+        <div className="container col-md-9">
             
-                <div className="d-flex justify-content-center shadow m-5">
-                    <div className=" mt-5 mb-5">
+                <div className="d-flex justify-content-center shadow m-5 p-2">
+                    <div className=" mt-5 mb-5" style={{width: '90%'}}>
                         <h3 className="mb-3 mt-2" style={{ color: '#ff7400' }}>My Order List</h3>
-                        <table className="table table-borderless" style={{width: '50rem'}}>
+                        <table className="table table-borderless" >
                             <thead>
                                 <tr style={{ backgroundColor: '#ff9d4c' }}>
                                     <th><h5>Book Name</h5></th>

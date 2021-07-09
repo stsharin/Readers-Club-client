@@ -31,38 +31,38 @@ const AddBook = () => {
 
     return (
         <div className="container-fluid">
-            <div className="row flex-nowrap">
+            <div className="row flex-nowrap" style={{width: '100%'}}>
                 <Bar />
                 <div className="col py-3">
                     <div className="container">
-                        <div className="d-flex justify-content-center shadow m-5">
-                            <div className="text-center mb-5">
+                        <div className="d-flex justify-content-center shadow m-5" style={{width: '90%'}}>
+                            <div className="text-center mb-5" style={{ width: '50%' }}>
                                 <h3 className="mt-5 mb-5" style={{ color: '#1d5ca0' }}>Add a new Book</h3>
 
-                                <form onSubmit={handleSubmit} className="form-inline">
+                                <form onSubmit={handleSubmit} className="form-inline" >
 
-                                    <div className="form-group m-3" style={{ width: '30rem' }}>
+                                    <div className="form-group m-3">
                                         <input onBlur={handleOnBlur} className="form-control" type="text" name="name" placeholder="Book Name" required />
 
                                     </div>
 
-                                    <div className="form-group m-3" style={{ width: '30rem' }}>
+                                    <div className="form-group m-3">
                                         <input onBlur={handleOnBlur} className="form-control" type="text" name="writer" placeholder="Author Name" required />
                                     </div>
 
-                                    <div className="form-group m-3" style={{ width: '30rem' }}>
+                                    <div className="form-group m-3">
                                         <input onBlur={handleOnBlur} className="form-control" type="text" name="quantity" placeholder="Add Quantity" required />
                                     </div>
 
-                                    <div className="form-group m-3" style={{ width: '30rem' }}>
+                                    <div className="form-group m-3">
                                         <input onBlur={handleOnBlur} className="form-control" type="text" name="price" placeholder="Add Price" required />
                                     </div>
 
-                                    <div className="form-group m-3" style={{ width: '30rem' }}>
+                                    <div className="form-group m-3">
                                         <input onBlur={handleOnBlur} className="form-control" type="text" name="image" placeholder="Add Book Cover URL" required />
                                     </div>
 
-                                    <button className="btn form-control mt-5" style={{ width: '30rem', backgroundColor: '#1d5ca0', color: 'white' }}>Add Book</button>
+                                    <button className="btn form-control mt-5" style={{ backgroundColor: '#1d5ca0', color: 'white' }}>Add Book</button>
                                 </form>
                             </div>
 
