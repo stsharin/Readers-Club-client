@@ -12,6 +12,7 @@ import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
 import Checkout from "./component/Checkout/Checkout";
 import MyOrders from "./component/MyOrders/MyOrders";
 import AllBookDetails from "./component/AllBookDetails/AllBookDetails";
+import AddBook from "./component/AddBook/AddBook";
 
 function App() {
   return (
@@ -45,6 +46,10 @@ function App() {
 
         <PrivateRoute path="/allBookDetails">
           <AllBookDetails />
+        </PrivateRoute>
+
+        <PrivateRoute path="/addBook">
+          <AddBook />
         </PrivateRoute>
 
         <Route path="*">

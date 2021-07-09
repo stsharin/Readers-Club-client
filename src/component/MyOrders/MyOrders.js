@@ -13,28 +13,30 @@ const MyOrders = () => {
 
     return (
 
-        <div className="container">
-            <div className="row">
-                <div className="">
-                    <h3 className="mb-3 mt-3">My <span style={{color: '#ff7400'}}>Order List</span></h3>
-                    <table className="table" style={{border: '1px solid #ff7400'}}>
-                        <thead>
-                            <tr style={{backgroundColor: '#c4c0c5'}}>
-                                <th><h5>Book Name</h5></th>
-                                <th><h5>Author</h5></th>
-                                <th><h5>Quantity</h5></th>
-                                <th><h5>Price</h5></th>
-                            
-                            </tr>
-                        </thead>
-                        <tbody style={{ color: '#000099' }}>
-                            {
-                                myOrders.map(order => <MySingleOrder order={order}></MySingleOrder>)
-                            }
-                        </tbody>
-                    </table>
+        <div className="container col-md-8">
+            
+                <div className="d-flex justify-content-center shadow m-5">
+                    <div className=" mt-5 mb-5">
+                        <h3 className="mb-3 mt-2" style={{ color: '#ff7400' }}>My Order List</h3>
+                        <table className="table table-borderless" style={{width: '50rem'}}>
+                            <thead>
+                                <tr style={{ backgroundColor: '#ff9d4c' }}>
+                                    <th><h5>Book Name</h5></th>
+                                    <th><h5>Author</h5></th>
+                                    <th><h5>Quantity</h5></th>
+                                    <th><h5>Price</h5></th>
+
+                                </tr>
+                            </thead>
+                            <tbody style={{ color: '#000099', backgroundColor: '#ffe3cc' }}>
+                                {
+                                    myOrders.map(order => <MySingleOrder order={order}></MySingleOrder>)
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
+           
         </div>
     );
 };
