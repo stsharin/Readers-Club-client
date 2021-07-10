@@ -6,21 +6,23 @@ const Navbar = () => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand ms-5" style={{color: '#1d5ca0'}} href="/home"><h5>Readers Club</h5></a>
-
+                    <a className="navbar-brand ms-5" style={{ color: '#1d5ca0' }} href="/home"><h5>Readers Club</h5></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0" >
                             <li className="nav-item me-5">
-                                <Link className="nav-link active" to="/home" style={{color: '#1d5ca0'}}>Home</Link>
+                                <Link className="nav-link active" to="/home" style={{ color: '#1d5ca0' }}>Home</Link>
                             </li>
                             <li className="nav-item me-5">
-                                <Link className="nav-link active" to="/myOrder" style={{color: '#1d5ca0'}}>Order</Link>
+                                <Link className="nav-link active" to="/myOrder" style={{ color: '#1d5ca0' }}>Order</Link>
                             </li>
                             <li className="nav-item me-5">
-                                <Link className="nav-link active" to="/allBookDetails" style={{color: '#1d5ca0'}}>Admin</Link>
+                                <Link className="nav-link active" to="/allBookDetails" style={{ color: '#1d5ca0' }}>Admin</Link>
                             </li>
                             <li className="nav-item me-5">
-                                <Link className="nav-link active" to="/login"><button className="btn" style={{ backgroundColor: '#1d5ca0', color: 'white'}}>Login</button></Link>
+                                <Link className="nav-link active" to="/login"><button className="btn" style={{ backgroundColor: '#1d5ca0', color: 'white' }}>Login</button></Link>
                             </li>
                         </ul>
                     </div>
