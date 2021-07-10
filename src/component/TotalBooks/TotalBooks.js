@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-// import bookData from '../FakeData/FakeData.json'
 import Book from '../Book/Book'
 
 const TotalBooks = () => {
+
+    const [bookData, setBookData] = useState([]);
+
     // adding fakeData to db
     // const addAllBooks = () => {
     //     fetch('https://young-dusk-28666.herokuapp.com/addBooks', {
@@ -14,7 +16,6 @@ const TotalBooks = () => {
     //         .then(data => console.log(data))
     // }
 
-    const [bookData, setBookData] = useState([]);
 
     // fetching the all book data from server
     useEffect(() => {
@@ -27,7 +28,13 @@ const TotalBooks = () => {
         <div className="container">
             <div className="container">
                 <div className="row">
-                    {/* <button onClick={addAllBooks}>Add Books</button> */}
+                    {
+                        bookData.length === 0 && <div class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    }
                     {
                         bookData.map(b => <Book book={b}></Book>)
                     }
