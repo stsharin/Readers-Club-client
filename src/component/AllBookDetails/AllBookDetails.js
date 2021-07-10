@@ -34,7 +34,7 @@ const AllBookDetails = () => {
                             <tbody className="p-5" style={{ backgroundColor: '#e8eef5' }}>
                                 {
                                     order.length === 0 && <div class="d-flex justify-content-center">
-                                        <div class="spinner-border" role="status">
+                                        <div class="spinner-border text-primary" role="status">
                                             <span class="visually-hidden">Loading...</span>
                                         </div>
                                     </div>

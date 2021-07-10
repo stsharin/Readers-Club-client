@@ -31,7 +31,7 @@ const MyOrders = () => {
                         <tbody style={{ color: '#000099', backgroundColor: '#e5f3e8' }}>
                             {
                                 myOrders.length === 0 && <div class="d-flex justify-content-center">
-                                    <div class="spinner-border" role="status">
+                                    <div class="spinner-border text-primary" role="status">
                                         <span class="visually-hidden">Loading...</span>
                                     </div>
                                 </div>
